@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+.light {
+  background: white;
+  color: black;
+}
+
 body {
   background: #272727;
   color: #fff;

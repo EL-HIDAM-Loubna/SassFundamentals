@@ -10,6 +10,16 @@
     align-items: center;
     flex-direction: $direction;
 }
+@mixin theme($light-theme: true){
+    @if($light-theme){
+        background:lighten($primary-color,100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+.light{
+    @include theme($light-theme: true);
+}
 
 body{
     background: $primary-color;
